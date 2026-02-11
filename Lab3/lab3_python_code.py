@@ -24,7 +24,7 @@ class Triangle(Shape):
         return 0.5 * self.base * self.height
     
 # read txt file
-file = open(r'C:\first-repository7\Lab3\shape.txt', 'r')
+file = open(r'C:\first-repository7\lab3\shape.txt', 'r')
 lines = file.readlines()
 file.close()
 
@@ -34,12 +34,12 @@ for line in lines:
 
     if shape == 'Rectangle':
         rect = Rectangle(int(components[1]), int(components[2]))
-        print ('Area of Rectangle is: ', rect.getArea())
+        print ("Area of Rectangle is: ", rect.getArea())
     elif shape == 'Circle':
         cirl = Circle(int(components[1]))
-        print ('Area of Circle is: ', cirl.getArea())
+        print ("Area of Circle is: ",cirl.getArea())
     elif shape == 'Triangle':
         tri = Triangle(int(components[1]), int(components[2]))
-        print ('Area of Triangle is: ', tri.getArea())
+        print ("Area of Triangle is: ", tri.getArea())
     else:
         pass
